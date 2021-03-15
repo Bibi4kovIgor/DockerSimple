@@ -11,11 +11,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-@Controller
-@RequestMapping(path="/")
+@RestController
+@RequestMapping(path="/demo")
 public class MainController {
 
     @RestController
+    static
     class GreetingController {
 
         @RequestMapping("/hello/{name}")
