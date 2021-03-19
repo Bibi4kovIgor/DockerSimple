@@ -6,7 +6,7 @@ on:
       - 'master'
 
 jobs:
-  CI Part (Docker):
+  ci_part_docker:
     runs-on: ubuntu-latest
     steps:
       -
@@ -35,9 +35,9 @@ jobs:
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
             
-  CD Part (Heroku): 
+  cd_part_heroku: 
     runs-on: ubuntu-latest
-    needs: [CI Part (Docker)]
+    needs: [ci_part_docker]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
