@@ -8,8 +8,8 @@ target/maven-archiver
 target/maven-status
 target/surefire-reports
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+#!**/src/main/**/target/
+#!**/src/test/**/target/
 
 ### STS ###
 .apt_generated
