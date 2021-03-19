@@ -1,15 +1,9 @@
 HELP.md
-target/classes
-target/test-classes
-target/demo-0.0.1-SNAPSHOT
-target/generated-sources
-target/generated-test-sources
-target/maven-archiver
-target/maven-status
-target/surefire-reports
+!target/*.jar
+target/
 !.mvn/wrapper/maven-wrapper.jar
-#!**/src/main/**/target/
-#!**/src/test/**/target/
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 ### STS ###
 .apt_generated
