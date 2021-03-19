@@ -29,8 +29,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          imageName: test
           push: true
-          tags: user/app:latest
+          tags: igorbibichkov/test:tagname
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
           
